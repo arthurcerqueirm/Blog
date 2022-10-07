@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Blog</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        article.head{
+            width: 100vw;
+            background-color: rgb(31, 106, 131);
+            display: flex;
+            justify-content: space-between;
+            height: 70px;
+            align-items: center;
+            color: white;
+        }
+        article.head ul{
+            display: flex;
+            margin-right: 10vw;
+            align-items: center;
+            width: 300px;
+            justify-content: space-between;
+            font-size: 1.3em;
+        }
+        article.head li{
+            text-decoration: none;
+            list-style: none;
+            padding: 7px;
+            transition-duration: 500ms;
+            border-radius: 5px;
+        }
+        article.head li:hover{
+            background-color: rgba(173, 216, 230, 0.219);
+
+        }
+        article.head h2{
+            margin-left: 2vw;
+            font-size: 2.2em;
+        }
+
+        #menu{
+            cursor: pointer;
+            display: none;
+            position: relative;
+            height: 22px;
+            width: 30px;
+            transition-duration: 0.5;
+        }
+        span{
+            position: absolute;
+            display: block;
+            height: 5px;
+            width: 100%;
+            border-radius: 30px;
+            background-color: white;
+            transition: 0.25s ease-in-out;
+        }
+        span:nth-child(1){
+            top: 0px;
+        }
+        span:nth-child(2){
+            top: 8px;
+        }
+        span:nth-child(3){
+            top: 16px;
+        }
+
+        @media screen and (max-width: 800px){
+            article.head ul{
+                display: none;
+            }
+            #menu{
+                display: block;
+                margin-right: 5vw;
+            }
+        }
+
+        #menu.active span:nth-child(1){
+            transform: rotate(-45deg);
+            top:8px;
+        }
+        #menu.active span:nth-child(2){
+            opacity: 0;
+        }
+        #menu.active span:nth-child(3){
+            transform: rotate(45deg);
+            top:8px;
+        }
+
+        article.right{
+            position: absolute;
+            right: 0;
+            width: 200px;
+            height: 0px;
+            background-color: rgb(20, 69, 85);
+            display: flex;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            transition-duration: 0.5s;
+        }
+
+        article.right ul{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+        }
+        article.right li{
+            margin: 5px;
+            padding: 5px;
+            font-size: 1.3em;
+            border-radius: 5px;
+            height: 0px;
+            opacity: 0;
+            transition-duration: 0.5;
+        }
+        article.right li:hover{
+            background-color: rgba(173, 216, 230, 0.219);
+
+        }
+
+        article.right.active{
+            height: 200px;
+        }
+        article.right.active li{
+            height: auto;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <article class="head">
+        <h2>Logo</h2>
+        <div id="menu"> 
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li>Sobre Nós</li>
+            <li>Contatos</li>
+            <li>Livros</li>
+        </ul>
+    </article>
+    <article class="right">
+        <ul>
+            <li>Sobre Nós</li>
+            <li>Contatos</li>
+            <li>Livros</li>
+        </ul>
+    </article>
+    <script>
+        var menu = document.querySelector('#menu')
+        var right = document.querySelector('.right')
+        console.log(menu , right)
+        menu.addEventListener('click', ()=>{
+            var right = document.querySelector('.right')
+            right.classList.toggle('active')
+            menu.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>
