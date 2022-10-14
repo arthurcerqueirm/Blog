@@ -288,36 +288,7 @@ li.off{
     box-shadow: 1px 1px 7px black;
 }
 
-@media (max-width: 710px){
 
-    
-
-    .titulo h1{
-        font-size: 3.5em;
-    }
-
-    .titulo p{
-        width: 80vw;
-        font-size: 1.2em;
-    }
-
-    .importancia p{
-        width: 80vw;
-        font-size: 1.1em;
-    }
-
-    .importancia h2{
-        font-size: 3em;
-    }
-
-    .topicos h2{
-        font-size: 3em;
-    }
-
-    .topicos li{
-        font-size: 1em;
-    }
-}
 
 
 
@@ -332,10 +303,10 @@ li.off{
     }
 }
 
-h1{
+h1#bu{
     padding: 5vh;
     text-align: center;
-    font-size: 64pt, 4em, 50%;
+    font-size: 4em;
     font-family: 'grok' , Arial, Helvetica, sans-serif;
 }
 
@@ -373,5 +344,41 @@ h1{
 @media (max-width:400px){
     .titulo h1{
         font-size: 2.3em;
+    }
+}
+@media (max-width: 710px){
+
+    .titulo{
+        padding-top: 150px ;
+    }
+
+    .titulo h1{
+        font-size: 3.5em;
+    }
+
+    .titulo p{
+        width: 80vw;
+        font-size: 1.2em;
+    }
+
+    .importancia p{
+        width: 80vw;
+        font-size: 1.1em;
+    }
+
+    .importancia h2{
+        font-size: 3em;
+    }
+
+    .topicos h2{
+        font-size: 3em;
+    }
+
+    .topicos li{
+        font-size: 1em;
+    }
+
+    h1#bu{
+        font-size: 3em;
     }
 }
