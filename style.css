@@ -14,6 +14,10 @@
     src: url('font/akzidenz-grotesk-r.otf') format('truetype');
 }
 
+html{
+    scroll-behavior: smooth;
+    transition: 2s;
+}
 :root{
     --royal-gray-light: rgb(128, 128, 128);
     --royal-gray-dark: rgb(94, 94, 94);
@@ -281,7 +285,8 @@ li.off{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin: 0 auto;
+    margin: 10px auto 80px auto;
+    padding-bottom: 50px;
     width: 50vw;
     background-color: #ffffff;
     border-radius: 20px;
@@ -328,7 +333,7 @@ h1#bu{
 }
 
 .conteudo p{
-    width: 80%;
+    width: 89%;
 }
 
 @media (max-width: 1000px){
