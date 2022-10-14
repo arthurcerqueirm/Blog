@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
 
 @font-face {
     font-family: 'Vogue';
@@ -8,6 +8,10 @@
 @font-face {
     font-family: 'Butler';
     src: url('font/Butler/Butler_Regular.otf') format('truetype');
+}
+@font-face {
+    font-family: 'grok';
+    src: url('font/akzidenz-grotesk-r.otf') format('truetype');
 }
 
 :root{
@@ -86,6 +90,7 @@ li.off{
     header.active{
         background-color: var(--royal-gray-dark);
     }
+    
     .menu{
         display: block;
         position: absolute;
@@ -220,4 +225,64 @@ li.off{
     .titulo p{
         font-size: 1.2em;
     }
+}
+
+.importancia{
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    background-color: #E6F5FF;
+    padding-top: 8vh;
+}
+
+.importancia h2{
+    font-size: 4em;
+    font-family: 'grok', 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.importancia p{
+    text-align: center;
+    width: 50vw;
+    margin-top: 5vh;
+    font-size: 1.2em;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topicos{
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    background-color: #A1ACB3;
+}
+
+.topicos h2{
+    font-size: 5em;
+    font-family: 'Pathway Gothic One', sans-serif;
+    text-align: center;
+}
+
+.topicos li{
+    font-size: 1.2em;
+    margin-top: 20px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.conteudo{
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    background-color: #ffffff;
+    padding-top: 8vh;
 }
