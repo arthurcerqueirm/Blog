@@ -298,15 +298,7 @@ li.off{
 
 
 
-@media (max-width: 500px) {
-    .topicos{
-        flex-direction: column;
-    }
 
-    .topicos li {
-        width: 70vw;
-    }
-}
 
 h1#bu{
     padding: 5vh;
@@ -371,12 +363,16 @@ h1#bu{
         font-size: 3em;
     }
 
+    .topicos{
+        justify-content: space-around;
+    }
+
     .topicos h2{
-        font-size: 3em;
+        font-size: 4em;
     }
 
     .topicos li{
-        font-size: 1em;
+        font-size: 0.9em;
     }
 
     h1#bu{
@@ -438,4 +434,19 @@ footer p{
     #rede{
     flex-direction: column;
 }
+}
+
+@media (max-width: 500px) {
+    .topicos{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .topicos h2{
+        font-size: 3em;
+    }
+    
+    .topicos li {
+        width: 70vw;
+    }
 }
