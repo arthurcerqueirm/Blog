@@ -216,16 +216,7 @@ li.off{
     background-color: #FFFFE6 ;
 }
 
-@media (max-width: 600px){
 
-    .titulo h1{
-        font-size: 3.5em;
-    }
-
-    .titulo p{
-        font-size: 1.2em;
-    }
-}
 
 .importancia{
     height: 350px;
@@ -235,7 +226,7 @@ li.off{
     align-items: center;
     width: 100vw;
     background-color: #E6F5FF;
-    padding-top: 8vh;
+    padding-top: 5vh;
 }
 
 .importancia h2{
@@ -285,4 +276,38 @@ li.off{
     width: 100vw;
     background-color: #ffffff;
     padding-top: 8vh;
+}
+
+@media (max-width: 710px){
+
+    .titulo h1{
+        font-size: 3.5em;
+    }
+
+    .titulo p{
+        font-size: 1.2em;
+    }
+
+    .importancia p{
+        font-size: 1.1em;
+    }
+
+    .importancia h2{
+        font-size: 3em;
+    }
+
+    .topicos h2{
+        font-size: 3em;
+    }
+
+    .topicos li{
+        font-size: 1em;
+    }
+}
+
+
+@media (max-width: 900px){
+    .topicos li{
+        width: 50vw;
+    }
 }
