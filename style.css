@@ -87,9 +87,14 @@ li.off{
 
 @media (max-width: 600px){
 
+    .logo{
+        width: 150px;
+        height: 150px;
+    }
     header.active{
         background-color: var(--royal-gray-dark);
     }
+    
     
     .menu{
         display: block;
@@ -171,6 +176,7 @@ li.off{
 }
 
 }
+
 
 /* main */
 
@@ -280,16 +286,20 @@ li.off{
 
 @media (max-width: 710px){
 
+    
+
     .titulo h1{
         font-size: 3.5em;
     }
 
     .titulo p{
+        width: 80vw;
         font-size: 1.2em;
     }
 
     .importancia p{
-        font-size: 0.9em;
+        width: 80vw;
+        font-size: 1.1em;
     }
 
     .importancia h2{
@@ -309,5 +319,15 @@ li.off{
 @media (max-width: 900px){
     .topicos li{
         width: 50vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .topicos{
+        flex-direction: column;
+    }
+
+    .topicos li {
+        width: 70vw;
     }
 }

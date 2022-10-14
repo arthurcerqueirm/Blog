@@ -4,7 +4,7 @@ const header = document.querySelector('#header')
 
 function OpenMenu(){
     menu.classList.toggle("active")
-    header.classList.toggle("active")
+    window.setTimeout( header.classList.toggle("active"), 600)
 }
 
 btnMenu.addEventListener('click' , OpenMenu)
