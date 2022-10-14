@@ -1,10 +1,10 @@
 const menu = document.querySelector('.menu')
 const btnMenu = document.querySelector('.btn-menu')
-const div = document.querySelector('.div')
+const header = document.querySelector('#header')
 
 function OpenMenu(){
     menu.classList.toggle("active")
-    console.log(btnMenu)
+    header.classList.toggle("active")
 }
 
 btnMenu.addEventListener('click' , OpenMenu)
